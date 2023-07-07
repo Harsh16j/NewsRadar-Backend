@@ -1,0 +1,15 @@
+{
+    "name": "newsradar-backend",
+    "version": "1.0.0",
+    "description": "Backend server to the newsradar app",
+    "main": "index.js",
+    "scripts": {
+        "server": "nodemon server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Harsh Jethwani",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.22"
+    }
+}
