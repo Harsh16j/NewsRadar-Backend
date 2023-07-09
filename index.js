@@ -9,9 +9,7 @@ app.use(express.json());
 // Middleware for enabling CORS
 app.use(cors());
 
-app.use("/", (req, res) => {
-    res.send("Hello World!");
-});
+app.use("/api/v1/news", require("./routes/fetchNews"));
 
 app.listen(port, () => {
     console.log(`NewsRadar backend app listening on port ${port}`);
