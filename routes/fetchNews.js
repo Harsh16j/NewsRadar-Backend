@@ -9,6 +9,7 @@ router.post("/fetchnews", async (req, res) => {
     if (Object.keys(req.body).length === 0) {
         res.status(400).json({
             error: "Request body not found",
+            message: "Include all the request parameters in the request body",
         });
     }
 
