@@ -1,0 +1,33 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "News Radar",
+    "dateExported": "2023-07-10T00:05:16.046Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a0ff4dcb-e80c-4a95-b948-3b4c14cd4b94",
+            "colId": "d1d43760-2c5c-44e5-b519-21d42d22127f",
+            "containerId": "",
+            "name": "fetchNews",
+            "url": "localhost:5000/api/v1/news/fetchnews",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-09T00:33:46.151Z",
+            "modified": "2023-07-10T00:02:49.500Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"category\": \"general\",\n    \"country\": \"IN\",\n    \"APIKey\": \"dc4f86ebe3ef4491ab0610eac28369a6\",\n    \"page\": 1,\n    \"pageSize\": 12\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
