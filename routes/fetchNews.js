@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 // Post request because we don't want APIKey to be visible in the url
-router.post("/updatenews", async (req, res) => {
+router.post("/fetchnews", async (req, res) => {
     // If no body sent with the request
 
     if (Object.keys(req.body).length === 0) {
