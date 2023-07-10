@@ -38,6 +38,7 @@ router.post("/fetchnews", async (req, res) => {
 
         let parsedData = await data.json();
         if (parsedData.status === "error") {
+            // The API returns 200 status request even when the API limit is exceeded.
             res.status(400).json({
                 error: "API limit exceeded, please try again later",
                 message: `Error message:${parsedData.message}`,
